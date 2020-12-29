@@ -9,10 +9,3 @@ $colors: (
 @function getColor($key) {
   @return map-get($colors, $key);
 }
-
-// @import 'путь/к/_colors.scss';
-
-// .button {
-//   color: getColor('primary');
-//   background-color: getColor('background');
-// }
