@@ -1,7 +1,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1,
@@ -40,11 +41,27 @@ img {
 
 body {
   padding-top: 85px;
-  background-color: getColor('primary-bg');
-  color: getColor('subtitle-text');
+  background-color: getColor("primary-bg");
+  color: getColor("subtitle-text");
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
 }
+
+.container {
+  width: 1056px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 85px;
+  width: 100%;
+  background-color: #fff;
+}
+/*# sourceMappingURL=index.css.map */
