@@ -1,8 +1,27 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 85px;
   width: 100%;
-  background-color: #fff;
+  background-color: getColor('primary-bg');
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  & .container {
+    display: flex;
+  }
+
+  & * {
+    outline: 1px solid blue;
+  }
+}
+
+.site-nav {
+  &__list {
+    display: flex;
+  }
 }
