@@ -2,6 +2,8 @@
 @import './base/container';
 @import './utils/colors';
 @import './utils/mixins';
+@import './utils/variables';
 
 @import './layout/header';
+@import './components/logo';
 @import './layout/footer';

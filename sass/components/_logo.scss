@@ -1,0 +1,13 @@
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 122px;
+  font-family: var(--logo-font);
+  @include font(1.95rem, 600, 68px);
+  color: getColor('logo-crowd');
+  text-transform: uppercase;
+
+  &__text {
+    color: getColor('logo-me');
+  }
+}

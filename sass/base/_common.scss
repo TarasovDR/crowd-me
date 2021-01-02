@@ -45,6 +45,6 @@ body {
   padding-top: 85px;
   background-color: getColor('primary-bg');
   color: getColor('subtitle-text');
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--main-font);
   @include font(16px, 500, 20px);
 }
