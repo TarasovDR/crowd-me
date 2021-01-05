@@ -1,13 +1,17 @@
 .logo {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin-right: 122px;
   font-family: var(--logo-font);
-  @include font(1.95rem, 600, 68px);
+  @include font(1.95rem, 600, 26.2px);
   color: getColor('logo-crowd');
   text-transform: uppercase;
 
-  &__text {
+  &__icon {
+    margin-right: 10px;
+  }
+
+  &__text-item {
     color: getColor('logo-me');
   }
 }

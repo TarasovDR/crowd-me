@@ -1,0 +1,14 @@
+.btn {
+  min-width: 100px;
+  padding: 14px 30px;
+  border: none;
+  color: getColor('primary-bg');
+  background-color: getColor('accent');
+  @include font(13.2px, 400, 14px);
+  text-transform: uppercase;
+
+  &__login {
+    margin-left: auto;
+    border-radius: 21px;
+  }
+}
