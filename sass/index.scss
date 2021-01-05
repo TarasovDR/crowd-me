@@ -1,8 +1,10 @@
 @import './base/common';
 @import './base/container';
+
 @import './utils/colors';
 @import './utils/mixins';
 @import './utils/variables';
+@import './utils/visually-hidden';
 
 @import './layout/header';
 @import './layout/hero';
@@ -10,3 +12,4 @@
 
 @import './components/logo';
 @import './components/btn';
+@import './components/section-title';

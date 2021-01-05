@@ -4,11 +4,54 @@
   border: none;
   color: getColor('primary-bg');
   background-color: getColor('accent');
-  @include font(13.2px, 400, 14px);
-  text-transform: uppercase;
+  @include font(13.2px, 600, 14px);
+  cursor: pointer;
+
+  transition: background-color 250ms var(--timing-fn);
+
+  &:hover,
+  &:focus {
+    background-color: getColor('active-btn');
+  }
 
   &__login {
     margin-left: auto;
     border-radius: 21px;
+    text-transform: uppercase;
+  }
+
+  &__hero {
+    min-width: 254px;
+    height: 73px;
+    padding: 30px 40px;
+    margin-bottom: 99px;
+    border-radius: 9px;
+    @include font(19.2px, 600, 13.2px);
+  }
+
+  &__properties {
+    min-width: 187px;
+    height: 51px;
+    padding: 20px 25x;
+    border-radius: 9px;
+    @include font(0.928rem, 600, 19.2px);
+  }
+
+  &__tab {
+    color: getColor('title-text');
+    background-color: getColor('primary-bg');
+    border-bottom: 1px solid getColor('subtitle-text');
+    @include font(2.075rem, 400, 34px);
+  }
+
+  &__projects {
+    min-width: 183px;
+    height: 52px;
+    padding: 19px 24x;
+    color: getColor('subtitle-text');
+    background-color: getColor('primary-bg');
+    border: 1px solid getColor('title-text');
+    border-radius: 9px;
+    @include font(0.928rem, 600, 19.2px);
   }
 }
