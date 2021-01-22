@@ -1,5 +1,17 @@
 .container {
-  width: 1056px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 16px;
+
+  @media screen and (min-width: $deviceSizeS) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: $deviceSizeL) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: $deviceSizeXL) {
+    max-width: 1052px;
+  }
 }

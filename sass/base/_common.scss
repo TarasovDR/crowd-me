@@ -47,4 +47,8 @@ body {
   color: getColor('subtitle-text');
   font-family: var(--main-font);
   @include font(16px, 500, 20px);
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }

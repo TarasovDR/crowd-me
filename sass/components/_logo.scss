@@ -1,15 +1,25 @@
 .logo {
-  display: flex;
-  align-items: flex-end;
-  margin-right: 122px;
-  font-family: var(--logo-font);
-  @include font(1.95rem, 600, 24px);
-  letter-spacing: 0.05em;
+  @include flex(flex-start, flex-end);
+  margin-bottom: 2px;
   color: getColor('logo-crowd');
+
+  font-family: var(--logo-font);
+  @include font(1.5rem, 600, 20px);
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  @media screen and (min-width: $deviceSizeL) {
+    @include font(1.95rem, 600, 24px);
+    margin-bottom: 8px;
+  }
 
   &__icon {
     margin-right: 10px;
+
+    @media screen and (max-width: 767px) {
+      width: 22px;
+      height: 24px;
+    }
   }
 
   &__text-item {

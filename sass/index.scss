@@ -1,4 +1,5 @@
 @import './base/common';
+@import './base/configs';
 @import './base/container';
 
 @import './utils/colors';
@@ -8,8 +9,11 @@
 
 @import './layout/header';
 @import './layout/hero';
+@import './layout/works';
 @import './layout/footer';
 
-@import './components/logo';
 @import './components/btn';
+@import './components/logo';
+@import './components/menu';
 @import './components/section-title';
+@import './components/section-subtitle';

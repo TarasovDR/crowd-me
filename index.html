@@ -32,29 +32,53 @@
               >crowd<span class="logo__text-item">me</span></span
             >
           </a>
-          <ul class="site-nav__list">
-            <li class="site-nav__item">
-              <a href="#" class="site-nav__link">home</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#" class="site-nav__link">how it works</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#" class="site-nav__link">discover a project</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#" class="site-nav__link">blog</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#" class="site-nav__link">find out more</a>
-            </li>
-          </ul>
+
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="переключатель мобильного меню"
+            >
+              <use
+                class="icon-menu-close"
+                href="./icons/sprite.svg#close-menu"
+              ></use>
+              <use class="icon-menu" href="./icons/sprite.svg#menu"></use>
+            </svg>
+          </button>
+
+          <div class="menu-container" id="menu-container">
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a href="#" class="site-nav__link">home</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#" class="site-nav__link">how it works</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#" class="site-nav__link">discover a project</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#" class="site-nav__link">blog</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#" class="site-nav__link">find out more</a>
+              </li>
+            </ul>
+          </div>
         </nav>
+
         <button type="button" class="btn btn__login">login</button>
       </div>
     </header>
     <main>
-      <section class="section hero">
+      <!-- <section class="section hero">
         <div class="container">
           <h1 class="visually-hidden">Crowd Me</h1>
           <p class="section-title">Intellectual Property has the Shelf Life</p>
@@ -79,9 +103,9 @@
             </svg>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section works">
+      <!-- <section class="section works">
         <div class="container">
           <svg
             class="works__icon"
@@ -91,21 +115,23 @@
           >
             <use href="./icons/sprite.svg#diagram"></use>
           </svg>
-          <h2>Our work is the presentation of our capabilities</h2>
-          <h3>
+          <h2 class="section-title">
+            Our work is the presentation of our capabilities
+          </h2>
+          <h3 class="section-subtitle">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation
           </h3>
-          <h3>
+          <h3 class="section-subtitle">
             Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
             irure dolor in reprehenderit in voluptate velit esse cillum dolore
             eu fugiat nulla pariatur.
           </h3>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section tab">
+      <!-- <section class="section tab">
         <div class="container">
           <div>
             <ul class="tab__list">
@@ -141,9 +167,9 @@
             </h3>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section properties">
+      <!-- <section class="section properties">
         <div class="container">
           <div>
             <div>
@@ -178,9 +204,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section projects">
+      <!-- <section class="section projects">
         <div class="container">
           <div>
             <h2>Featured Projects</h2>
@@ -282,9 +308,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section community">
+      <!-- <section class="section community">
         <div class="container">
           <h2>Be Part of a Growing International Community</h2>
           <h3>
@@ -313,12 +339,15 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <p class="copyright">Copyright &copy; 2001 - 2014 Cssauthor.com</p>
       </div>
-    </footer>
+    </footer> -->
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

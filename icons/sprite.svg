@@ -17,6 +17,6 @@
 </symbol>
 <symbol id="thought" viewBox="0 0 77 32">
 <path fill="#fff" style="fill: var(--color2, #fff)" d="M74.602 28.145h-54.361l-4.241 3.855v-3.855h-14.072c-1.065 0-1.928-0.863-1.928-1.928v-24.289c0-1.065 0.863-1.928 1.928-1.928h72.675c1.065 0 1.928 0.863 1.928 1.928v24.289c0 1.065-0.863 1.928-1.928 1.928z"></path>
-</symbol>
+</symbol><symbol id="menu" width="40" height="40" ><path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.667V12h24v2.667H8zm0 6.666h24v-2.666H8v2.666zM8 28h24v-2.667H8V28z"/></symbol><symbol id="close-menu" width="40" height="40"><path d="M29.667 12.88L27.787 11l-7.454 7.453L12.88 11 11 12.88l7.453 7.453L11 27.787l1.88 1.88 7.453-7.454 7.454 7.454 1.88-1.88-7.454-7.454 7.454-7.453z"/></symbol>
 </defs>
 </svg>

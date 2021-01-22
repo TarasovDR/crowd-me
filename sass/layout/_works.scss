@@ -1,0 +1,14 @@
+.works {
+  background-color: getColor('primary-bg');
+  max-width: 1300px;
+  padding: 99px 0;
+
+  &.section {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__icon {
+    margin-bottom: 52px;
+  }
+}
