@@ -3,17 +3,13 @@
 
   &.section {
     max-width: 1300px;
-    min-height: 570px;
-    padding: 171px 0 48px 0;
-    margin: 0 auto;
+    // min-height: 570px;
     text-align: center;
-    background-image: linear-gradient(
-        to right,
-        rgba(112, 112, 112, 0.29),
-        rgba(112, 112, 112, 0.29)
-      ),
-      url(../../images/hero-banner.jpg);
+    background-image: linear-gradient(getColor('hero-overlay')),
+      url('../../images/hero-banner.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
   }
 
   &__slider {
@@ -22,9 +18,15 @@
 
   &__icon {
     fill: getColor('primary-bg');
+    transition: fill 250ms var(--timing-fn);
 
     &:first-child {
       margin-right: 32px;
+    }
+
+    &:hover,
+    &:focus {
+      fill: getColor('accent');
     }
   }
 }

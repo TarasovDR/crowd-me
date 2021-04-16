@@ -1,14 +1,16 @@
 $colors: (
-  'accent': #add136,
-  'active-btn': #26a6d1,
-  'active-bg': #e2f8ff,
-  'footer': #848484,
-  'header': #989898,
-  'logo-crowd': #6d6e70,
-  'logo-me': #595959,
-  'primary-bg': #ffffff,
-  'subtitle-text': #484848,
-  'title-text': #515151,
+  'accent': rgb(173, 209, 54),
+  'active-btn': rgb(38, 166, 209),
+  'active-bg': rgb(226, 248, 255),
+  'footer': rgb(132, 132, 132),
+  'header': rgb(152, 152, 152),
+  'hero-overlay': rgba(81, 81, 81, 0.29),
+  'logo-crowd': rgb(109, 110, 112),
+  'logo-me': rgb(89, 89, 89),
+  'primary-bg': rgb(255, 255, 255),
+  'subtitle-text': rgb(72, 72, 72),
+  'title-text': rgb(81, 81, 81),
+  'decor-primary': rgb(51, 51, 51),
 );
 
 @function getColor($key) {

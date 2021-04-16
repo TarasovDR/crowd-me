@@ -3,15 +3,50 @@
 
   .hero & {
     color: getColor('primary-bg');
-    @include font(2.2rem, 400, 1);
+    @include font(1.288rem, 400, 1);
     margin-bottom: 58px;
   }
 
   .works & {
-    @include font(1.2rem, 400, 1);
+    @include font(1rem, 400, 1.5);
   }
 
-  .works &:first-child {
-    margin-bottom: 54px;
+  .works &:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  @media screen and (min-width: $deviceSizeL) {
+    .hero & {
+      @include font(1.575rem, 400, 1);
+      margin-bottom: 58px;
+    }
+
+    .works & {
+      @include font(1.1rem, 400, 1.6);
+    }
+
+    .works &:first-child {
+      margin-bottom: 54px;
+    }
+  }
+
+  @media screen and (min-width: $deviceSizeXL) {
+    .hero & {
+      @include font(2.2rem, 400, 1);
+      margin-bottom: 58px;
+    }
+
+    .works & {
+      @include font(1.2rem, 400, 1.7);
+    }
+
+    .works &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+
+    .tab & {
+      @include font(1.075rem, 400, 1.9);
+      color: getColor('subtitle-text');
+    }
   }
 }

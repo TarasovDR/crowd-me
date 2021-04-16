@@ -1,0 +1,106 @@
+.tab {
+  &__list {
+    position: relative;
+    counter-reset: tab;
+    // @include flex(center, center);
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.23);
+
+    &:nth-child(1) {
+      padding: 10px 28px 40px 72px;
+    }
+    &:nth-child(2) {
+      padding: 10px 28px 40px 188px;
+
+      &::before {
+        left: 112px;
+      }
+      &::after {
+        left: 128px;
+      }
+    }
+    &:nth-child(3) {
+      padding: 10px 15px 40px 104px;
+
+      &::before {
+        left: 28px;
+      }
+      &::after {
+        left: 44px;
+      }
+    }
+
+    &:hover {
+      border-bottom: 1px solid getColor('accent');
+    }
+    &:hover &::before {
+      background-color: getColor('accent');
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 6px;
+      left: 3px;
+      width: 43px;
+      height: 43px;
+      border-radius: 50%;
+      background-color: rgba(51, 51, 51, 0.77);
+
+      &:hover {
+        background-color: getColor('accent');
+      }
+    }
+
+    &::after {
+      position: absolute;
+      counter-increment: tab;
+      content: counters(tab, '');
+      color: getColor('primary-bg');
+      // color: blue;
+      top: 16px;
+      left: 19px;
+      @include font(1.25rem, 600, 1);
+    }
+
+    & input[type='radio'] {
+      display: none;
+    }
+  }
+
+  &__item-name {
+    display: inline-block;
+    // background-color: getColor('primary-bg');
+    @include font(2.075rem, 400, 34px);
+    color: rgba(51, 51, 51, 0.77);
+  }
+
+  &__content {
+    position: absolute;
+    outline: 1px solid red;
+    top: 84px;
+    left: 0;
+    // width: calc(100% - 20px);
+    padding: 66px 106px;
+    // @include flex(space-between, center);
+    display: none;
+  }
+
+  & :checked + .tab__item-name {
+    position: relative;
+    top: 0;
+    // z-index: 1;
+  }
+
+  & :checked ~ &__content {
+    display: flex;
+  }
+
+  &__img {
+    margin-right: 106px;
+  }
+}

@@ -17,26 +17,32 @@
     background-color: getColor('active-btn');
   }
 
-  @media screen and (min-width: $deviceSizeL) {
-    margin: 0;
-  }
-
   &__login {
     border-radius: 21px;
     text-transform: uppercase;
 
-    // @media screen and (min-width: $deviceSizeXL) {
-    //   margin-left: auto;
-    // }
+    @media screen and (min-width: $deviceSizeL) {
+      margin: 0;
+    }
   }
 
   &__hero {
-    min-width: 254px;
-    height: 73px;
-    padding: 30px 40px;
-    margin-bottom: 99px;
+    min-width: 200px;
+    padding: 20px 30px;
+    margin-bottom: 70px;
     border-radius: 9px;
-    @include font(19.2px, 600, 13.2px);
+    @include font(16.2px, 600, 13.2px);
+
+    @media screen and (min-width: $deviceSizeL) {
+      padding: 25px 35px;
+      margin-bottom: 84px;
+      @include font(17.2px, 600, 13.2px);
+    }
+    @media screen and (min-width: $deviceSizeXL) {
+      padding: 30px 40px;
+      margin-bottom: 99px;
+      @include font(19.2px, 600, 13.2px);
+    }
   }
 
   &__properties {
